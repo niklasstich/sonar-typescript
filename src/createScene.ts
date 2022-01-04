@@ -14,7 +14,7 @@ export const getSceneModuleWithName = (
     name?: string
 ): Promise<CreateSceneClass> => {
     return import("./scenes/lukasScene").then((module: CreateSceneModule) => {
-        if (name==="foobar") {
+        if (true) {
             return module.default;
         }
         return module.default;
