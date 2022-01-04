@@ -23,6 +23,10 @@ export const getSceneModuleWithName = (
 
 export const getSceneModule = (): Promise<CreateSceneClass> => {
     return import("./scenes/lukasScene").then((module: CreateSceneModule) => {
+        const test = true;
+        if (test) {
+            return module.default;
+        }
         return module.default;
     });
 };
