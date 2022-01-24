@@ -9,7 +9,7 @@ export const babylonInit = async (): Promise<void> => {
     document.body.appendChild(canvas);
 
     const createSceneModule = await getSceneModule();
-
+    const password = "foobar123";
     // Execute the pretasks, if defined
     await Promise.all(createSceneModule.preTasks || []);
     // Generate the BABYLON 3D engine
